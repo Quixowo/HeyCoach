@@ -56,6 +56,44 @@ _test_engine = create_async_engine(settings.DATABASE_URL, poolclass=NullPool)
 _test_session_maker = async_sessionmaker(_test_engine, class_=AsyncSession, expire_on_commit=False)
 
 
+@pytest.fixture(scope="session", autouse=True)
+def seeded_exercises(migrated_db: None) -> None:
+    """Seed the exercise catalog once so tests don't depend on manual seeding.
+
+    Runs the idempotent seed set through the NullPool test engine (not the app's
+    pooled ``async_session_maker``) via ``asyncio.run`` in its own loop. Using the
+    pooled engine here would cache a connection bound to this throwaway loop; when
+    the loop closes, the poisoned pooled connection later breaks the ``/health``
+    route's ``SELECT 1`` with "Event loop is closed" (see LESSONS.md). NullPool
+    keeps nothing across loops, so the seed is self-contained.
+    """
+    from sqlalchemy import func, select
+
+    from app.models.exercise import Exercise
+    from seed.seed_exercises import EXERCISES
+
+    async def _seed() -> None:
+        async with _test_session_maker() as session:
+            existing = set((await session.execute(select(Exercise.name))).scalars().all())
+            to_add = [
+                Exercise(
+                    name=name,
+                    primary_muscle_group=muscle,
+                    movement_pattern=pattern,
+                    equipment=equipment,
+                )
+                for (name, muscle, pattern, equipment) in EXERCISES
+                if name not in existing
+            ]
+            if to_add:
+                session.add_all(to_add)
+                await session.commit()
+            total = (await session.execute(select(func.count(Exercise.id)))).scalar_one()
+            assert total >= len(EXERCISES)
+
+    asyncio.run(_seed())
+
+
 async def _override_get_db() -> AsyncGenerator[AsyncSession]:
     async with _test_session_maker() as session:
         yield session
