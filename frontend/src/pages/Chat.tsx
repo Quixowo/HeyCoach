@@ -1,9 +1,12 @@
 /**
  * Chat — the coach conversation page.
  *
- * Layout: full-height panel with message list + fixed input at the bottom.
- * The trace panel (tool call events) is collected by useChatStream but
- * rendered in a later phase.
+ * Layout: two-column side-by-side on wide viewports — chat panel (left) and
+ * live trace panel (right) — both driven by the same useChatStream instance.
+ * On narrow viewports (<= 768px) the trace panel stacks below the chat.
+ *
+ * Chat column: message list (scrollable) + fixed input at the bottom.
+ * Trace column: TracePanel consuming traceEvents; live-only, resets on refresh.
  *
  * Design: matches the existing token system (navy-charcoal bg, #FF4D00 accent,
  * Space Grotesk / Inter). User bubbles sit right-aligned; coach bubbles sit
@@ -19,6 +22,7 @@ import {
   type KeyboardEvent,
 } from 'react'
 import { useChatStream, type ChatMessage } from '../hooks/useChatStream'
+import { TracePanel } from '../components/TracePanel'
 
 // ---- Message bubble ----
 
@@ -121,7 +125,7 @@ function EmptyState() {
 // ---- Chat page ----
 
 export function Chat() {
-  const { messages, status, sendMessage, retry } = useChatStream()
+  const { messages, traceEvents, status, sendMessage, retry } = useChatStream()
   const [input, setInput] = useState('')
   const bottomRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLTextAreaElement>(null)
@@ -156,72 +160,78 @@ export function Chat() {
     (lastMsg.error != null || lastMsg.rateLimited)
 
   return (
-    <div className="chat-page">
-      {/* Message list */}
-      <div className="chat-messages" aria-live="polite" aria-label="Conversation">
-        {messages.length === 0 ? (
-          <EmptyState />
-        ) : (
-          messages.map((msg) => (
-            <Bubble
-              key={msg.id}
-              message={msg}
-              onRetry={
-                lastIsError && msg.id === lastMsg.id && !msg.rateLimited
-                  ? retry
-                  : undefined
-              }
+    <div className="chat-layout">
+      {/* ---- Left: chat column ---- */}
+      <div className="chat-page">
+        {/* Message list */}
+        <div className="chat-messages" aria-live="polite" aria-label="Conversation">
+          {messages.length === 0 ? (
+            <EmptyState />
+          ) : (
+            messages.map((msg) => (
+              <Bubble
+                key={msg.id}
+                message={msg}
+                onRetry={
+                  lastIsError && msg.id === lastMsg.id && !msg.rateLimited
+                    ? retry
+                    : undefined
+                }
+              />
+            ))
+          )}
+          <div ref={bottomRef} aria-hidden="true" />
+        </div>
+
+        {/* Input area */}
+        <div className="chat-input-wrap">
+          <form className="chat-input-form" onSubmit={handleSubmit}>
+            <textarea
+              ref={inputRef}
+              className="chat-input"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Ask your coach…"
+              rows={1}
+              disabled={isStreaming}
+              aria-label="Message input"
             />
-          ))
-        )}
-        <div ref={bottomRef} aria-hidden="true" />
+            <button
+              type="submit"
+              className="btn btn-primary chat-send-btn"
+              disabled={isStreaming || !input.trim()}
+              aria-label="Send message"
+            >
+              {isStreaming ? (
+                <span className="spinner" style={{ width: 16, height: 16 }} />
+              ) : (
+                /* Simple send arrow */
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 8L14 2L8 14L7 9L2 8Z"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              )}
+            </button>
+          </form>
+          <p className="chat-input-hint">
+            Enter to send · Shift+Enter for new line
+          </p>
+        </div>
       </div>
 
-      {/* Input area */}
-      <div className="chat-input-wrap">
-        <form className="chat-input-form" onSubmit={handleSubmit}>
-          <textarea
-            ref={inputRef}
-            className="chat-input"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Ask your coach…"
-            rows={1}
-            disabled={isStreaming}
-            aria-label="Message input"
-          />
-          <button
-            type="submit"
-            className="btn btn-primary chat-send-btn"
-            disabled={isStreaming || !input.trim()}
-            aria-label="Send message"
-          >
-            {isStreaming ? (
-              <span className="spinner" style={{ width: 16, height: 16 }} />
-            ) : (
-              /* Simple send arrow */
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M2 8L14 2L8 14L7 9L2 8Z"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            )}
-          </button>
-        </form>
-        <p className="chat-input-hint">
-          Enter to send · Shift+Enter for new line
-        </p>
-      </div>
+      {/* ---- Right: live trace panel ---- */}
+      <TracePanel events={traceEvents} />
     </div>
   )
 }

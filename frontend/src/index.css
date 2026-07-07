@@ -647,16 +647,46 @@ a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; b
 /* ---- Chat page ---- */
 
 /*
-  Layout: the chat page fills the full viewport height below the nav.
-  The message list scrolls; the input is pinned at the bottom.
+  Outer layout: two columns — chat (flex:1, min 320px) and trace panel (320px fixed).
+  On narrow viewports the trace panel stacks below the chat column.
+  The wrapper is full-viewport-height below the 56px nav.
+*/
+.chat-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: calc(100vh - 56px); /* 56px = nav height */
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+/*
+  Chat column: fills remaining space after the trace panel.
+  On its own it was the full page; now it's the left side of the two-col layout.
 */
 .chat-page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 56px); /* 56px = nav height */
-  max-width: 640px;
-  width: 100%;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 0; /* flex shrink past content */
+  height: 100%;
+}
+
+/* Narrow: stack trace below chat */
+@media (max-width: 768px) {
+  .chat-layout {
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 56px);
+    max-width: 640px;
+  }
+
+  .chat-page {
+    height: calc(100vh - 56px - 260px); /* reserve height for trace panel below */
+    min-height: 0;
+  }
 }
 
 .chat-messages {
@@ -835,6 +865,309 @@ a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; b
   font-size: 0.75rem;
   color: var(--color-text-3);
   text-align: right;
+  line-height: 1;
+}
+
+/* ---- Trace panel ---- */
+
+/*
+  The trace panel is a console/instrument readout — reads like a terminal
+  sidebar. Left-bordered instrument panel at a fixed width, dark surface,
+  monospace-flavored type for labels and numbers.
+
+  Latency numbers reuse the scoreboard aesthetic (tabular-nums, font-display)
+  scaled to inline size — consistent with the project's signature element.
+
+  Design decisions:
+  - Fixed 300px width on desktop; full-width on mobile (stacked).
+  - Left border in --color-border + subtly lighter background than the chat
+    column creates depth without a heavy shadow.
+  - Pulse dot for in-progress tool calls reuses session-status-dot pattern.
+  - turn_complete divider uses a full-width hairline so consecutive turns
+    group visually as the event list accumulates.
+  - Error rows use --color-danger accent treatment (consistent with chat errors).
+*/
+
+.trace-panel {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border-left: 1px solid var(--color-border);
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .trace-panel {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    height: 260px; /* fixed height when stacked */
+    flex-shrink: 0;
+  }
+}
+
+/* Header */
+.trace-panel-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.trace-panel-title {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-2);
+}
+
+.trace-panel-subtitle {
+  font-size: 0.6875rem;
+  color: var(--color-text-3);
+  letter-spacing: 0.04em;
+}
+
+/* Body — scrollable event list */
+.trace-panel-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--sp-2) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Empty state */
+.trace-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  padding: var(--sp-10) var(--sp-4);
+  text-align: center;
+  flex: 1;
+}
+
+.trace-empty-icon {
+  font-size: 1.5rem;
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.trace-empty-text {
+  font-size: 0.8125rem;
+  color: var(--color-text-3);
+  line-height: 1.4;
+}
+
+/* ---- Individual trace rows ---- */
+
+.trace-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-4);
+  min-height: 32px;
+  flex-shrink: 0; /* body is a flex column — rows must scroll, never compress */
+  border-bottom: 1px solid rgba(46, 61, 85, 0.5); /* --color-border at 50% */
+}
+
+.trace-row:last-child {
+  border-bottom: none;
+}
+
+/* Row body: stacks label, tool name, summary vertically */
+.trace-row-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+/* Inline metadata row inside the body (label + num on same line) */
+.trace-row-body > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Tool name */
+.trace-tool-name {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Small label ("Calling", "Agent error") */
+.trace-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.trace-label--calling {
+  color: var(--color-text-3);
+}
+
+.trace-label--error {
+  color: var(--color-danger);
+}
+
+/* Ellipsis suffix on in-progress rows */
+.trace-ellipsis {
+  color: var(--color-text-3);
+  font-size: 0.8125rem;
+}
+
+/* In-progress pulse dot (matches session-status-dot) */
+.trace-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 5px; /* align with first text line */
+  animation: pulse 2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .trace-pulse-dot { animation: none; }
+}
+
+/* Completed checkmark */
+.trace-check {
+  font-size: 0.75rem;
+  color: var(--color-ok);
+  flex-shrink: 0;
+  margin-top: 3px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+/* Error flag */
+.trace-error-flag {
+  font-size: 0.75rem;
+  color: var(--color-danger);
+  flex-shrink: 0;
+  margin-top: 3px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+/* Latency: inline scoreboard mini-number */
+.trace-latency {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  margin-top: 1px;
+}
+
+.trace-latency-num {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.trace-latency-unit {
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: var(--color-text-3);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Result summary — muted, small, truncated to 2 lines */
+.trace-summary {
+  font-size: 0.75rem;
+  color: var(--color-text-2);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.trace-summary--error {
+  color: #FCA5A5;
+}
+
+/* Error row */
+.trace-row--error {
+  background: rgba(239, 68, 68, 0.06);
+}
+
+/* ---- Turn-complete divider ---- */
+
+/*
+  Full-width hairline with a centered summary badge.
+  Groups consecutive turns as the event list grows.
+*/
+.trace-turn-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-4);
+  flex-shrink: 0; /* same scroll-not-compress rule as .trace-row */
+}
+
+.trace-turn-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.trace-turn-summary {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.trace-turn-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-3);
+}
+
+.trace-turn-num {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-2);
+  line-height: 1;
+}
+
+.trace-turn-unit {
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: var(--color-text-3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.trace-turn-sep {
+  font-size: 0.75rem;
+  color: var(--color-text-3);
   line-height: 1;
 }
 

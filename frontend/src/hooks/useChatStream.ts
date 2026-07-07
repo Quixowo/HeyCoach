@@ -33,7 +33,7 @@ export interface ChatMessage {
 
 export interface TraceEvent {
   id: string
-  type: 'tool_call_started' | 'tool_call_completed' | 'turn_complete'
+  type: 'tool_call_started' | 'tool_call_completed' | 'turn_complete' | 'error'
   // tool_call_started
   tools?: string[]
   // tool_call_completed
@@ -43,6 +43,8 @@ export interface TraceEvent {
   // turn_complete
   iterations?: number
   total_latency_ms?: number
+  // error
+  message?: string
 }
 
 export type ChatStatus = 'idle' | 'streaming' | 'done' | 'error'
@@ -259,6 +261,10 @@ export function useChatStream(): UseChatStreamReturn {
             return
           } else if (type === 'error') {
             const message = (event.message as string) ?? 'The coach encountered an error.'
+            setTraceEvents((prev) => [
+              ...prev,
+              { id: makeId(), type: 'error', message },
+            ])
             setMessagesSync((prev) =>
               prev.map((m) =>
                 m.id === aId ? { ...m, streaming: false, error: message } : m,
