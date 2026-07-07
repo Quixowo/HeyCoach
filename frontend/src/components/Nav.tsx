@@ -19,7 +19,7 @@ export function Nav() {
     <nav className="app-nav" aria-label="Main navigation">
       <div className="app-nav-inner">
         <div className="nav-brand">
-          <span>■</span> Gym Coach
+          <span>■</span> HeyCoach
         </div>
 
         <ul className="nav-links" role="list">

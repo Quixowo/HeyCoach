@@ -13,7 +13,7 @@ from app.core.config import settings
 from app.core.rate_limit import limiter
 from app.db.session import engine
 
-app = FastAPI(title="AI Gym Coach API")
+app = FastAPI(title="HeyCoach API")
 
 # --- Rate limiting (spec §6.4) ------------------------------------------------
 # The Limiter is attached to app.state (slowapi's required lookup point), the
