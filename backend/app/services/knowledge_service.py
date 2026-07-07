@@ -55,7 +55,8 @@ _SYNTHESIS_PROMPT = (
     "using outside knowledge.\n\n"
     "Question: {query}\n\n"
     "Reference material:\n{reference}\n\n"
-    "Give a 2-4 sentence answer, grounded strictly in the material above."
+    "Give a 2-4 sentence answer in plain prose (no markdown headings or lists), "
+    "grounded strictly in the material above."
 )
 
 _GROUNDEDNESS_PROMPT = (
