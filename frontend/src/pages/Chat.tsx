@@ -115,8 +115,7 @@ function EmptyState() {
       <div className="empty-state-icon" aria-hidden="true">💬</div>
       <h3>Ask your coach</h3>
       <p>
-        Ask about your workouts, progression, or training principles.
-        Your conversation resets on refresh — that's intentional.
+        Ask about your workouts, progression, nutrition, or training principles.
       </p>
     </div>
   )
