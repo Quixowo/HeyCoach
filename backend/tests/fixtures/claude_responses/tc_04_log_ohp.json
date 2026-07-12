@@ -1,0 +1,86 @@
+{
+  "id": "04_log_ohp",
+  "user_message": "Log 3 sets of overhead press at 95 pounds for 5 reps.",
+  "setup": {},
+  "must_call": [
+    "search_exercises",
+    "log_set"
+  ],
+  "must_not_call": [],
+  "checks": {
+    "logged_sets": {
+      "exercise_name": "Overhead Press",
+      "weight": 95,
+      "reps": 5,
+      "count": 3
+    }
+  },
+  "id_map": {
+    "e210f991-077e-4d7b-a870-8a5b4181d7a5": "Overhead Press"
+  },
+  "stream_iterations": [
+    [
+      {
+        "type": "text",
+        "text": "Let me search for the overhead press exercise first, then I'll log all 3 sets at once."
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01JkvgqkuLYn7RCsdvR9cXMw",
+        "name": "search_exercises",
+        "input": {
+          "query": "overhead press"
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "text": "Got it — that's clearly the barbell Overhead Press. Logging all 3 sets now."
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_016vhHVwxeBpMKbSdEUBMUo5",
+        "name": "log_set",
+        "input": {
+          "exercise_id": "e210f991-077e-4d7b-a870-8a5b4181d7a5",
+          "weight": 95,
+          "reps": 5
+        }
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01J3bpkxJL4N3LvEhSeMRM7A",
+        "name": "log_set",
+        "input": {
+          "exercise_id": "e210f991-077e-4d7b-a870-8a5b4181d7a5",
+          "weight": 95,
+          "reps": 5
+        }
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01ME9ckoJxoVxufXXaWLg26R",
+        "name": "log_set",
+        "input": {
+          "exercise_id": "e210f991-077e-4d7b-a870-8a5b4181d7a5",
+          "weight": 95,
+          "reps": 5
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "text": "All 3 sets logged — Overhead Press, 95 lbs x 5 reps each. How did they feel? If you've got RIR (reps in reserve) to note, I can add that to the record."
+      }
+    ]
+  ],
+  "recorded_tools": [
+    "search_exercises",
+    "log_set",
+    "log_set",
+    "log_set"
+  ],
+  "matched_intent": true
+}

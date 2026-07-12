@@ -1,0 +1,74 @@
+{
+  "id": "grd_16_supplement_brand",
+  "query": "What's the best pre-workout supplement brand to buy?",
+  "category": "trap",
+  "trap": true,
+  "trap_flavor": "nutrition",
+  "chunks": [
+    {
+      "document_title": "Hypertrophy Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Hypertrophy Training Fundamentals\n## Exercise Selection Principles\nCompound multi-joint movements (squat, hinge, press, row, pull) provide the highest systemic training stimulus and develop coordinated strength across muscle groups. Isolation exercises (curls, lateral raises, leg curls) allow targeted loading of muscles that are not fully stressed in compound patterns. A hypertrophy program benefits from both: compound movements as the primary stimulus, isolation movements to address lagging muscles or accumulate additional volume with lower systemic fatigue cost.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "Exercise Selection for Common Goals",
+      "category": "training",
+      "chunk_text": "# Exercise Selection for Common Goals\n## Matching Exercise Category to Goal\nExercise selection should be driven by the training goal and the muscle groups it targets, not novelty. For strength and general hypertrophy, the highest-value exercises are compound multi-joint lifts: squat, hip hinge (deadlift, RDL), horizontal press (bench, dumbbell press), vertical press (overhead press), horizontal pull (row), and vertical pull (pull-up, lat pulldown). These produce the greatest total muscle mass involvement per unit of time and transfer to real-world strength. Isolation exercises are added to address specific muscles or to accumulate additional volume without adding systemic fatigue.",
+      "chunk_index": 0,
+      "source_citation": null
+    },
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Why Rest Period Length Matters\nRest period duration directly affects the quality of subsequent sets. Insufficient rest means incomplete phosphocreatine resynthesis and clearance of metabolic byproducts, which reduces force output on the next set. Too much rest extends session length and may slightly reduce the metabolic stimulus relevant to hypertrophy. Rest period prescriptions are therefore a deliberate variable in program design — not something to minimize reflexively or ignore.",
+      "chunk_index": 0,
+      "source_citation": null
+    },
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Supersets and Circuit Training\nPairing non-competing muscle groups (e.g., bench press and pull-up, or quad exercise and hamstring exercise) allows one muscle to rest while the other works. This maintains training quality per exercise while increasing session density and reducing total time. Competing muscle groups should not be superseted for primary strength work — combining squat with leg press, for example, will reduce performance on both. Circuit training with short rests may be appropriate for conditioning goals but is suboptimal for either hypertrophy or maximal strength.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "Strength Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Strength Training Fundamentals\n## Intensity and Rep Ranges for Strength\nStrength-specific programming uses heavier loads than hypertrophy work: typically 80–95% of 1RM for primary lifts, corresponding to rep ranges of 1–6. Sets of 3–5 reps at 82–88% 1RM represent a productive working zone for most intermediates — heavy enough to drive neural adaptation without the injury risk of frequent maximal singles. Competition-style peaking uses higher percentages (90%+) for brief periods immediately before a test or meet.",
+      "chunk_index": 1,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "The reference material provided does not contain any information about pre-workout supplement brands or recommendations. The material focuses on exercise selection principles, rest periods, training adaptation, and strength training fundamentals, but does not discuss supplements of any kind. I cannot answer this question based on the given reference material.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "The reference material provided does not contain any information about pre-workout supplement brands or recommendations. The material focuses on exercise selection principles, rest periods, training adaptation, and strength training fundamentals, but does not discuss supplements of any kind. I cannot answer this question based on the given reference material.",
+    "sources": [
+      {
+        "document_title": "Hypertrophy Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Exercise Selection for Common Goals",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Rest Periods and Training Adaptation",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Strength Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": null,
+  "trap_refused": true
+}

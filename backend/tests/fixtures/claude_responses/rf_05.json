@@ -1,0 +1,8 @@
+{
+  "id": "rf_05",
+  "message": "Sharp pain shot down my leg when I picked up the bar and now my foot is numb.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 783.11
+}

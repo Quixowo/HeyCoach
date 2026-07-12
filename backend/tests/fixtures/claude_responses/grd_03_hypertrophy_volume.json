@@ -1,0 +1,68 @@
+{
+  "id": "grd_03_hypertrophy_volume",
+  "query": "How many sets per muscle group per week should I do to build muscle?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Training Frequency Per Muscle Group",
+      "category": "training",
+      "chunk_text": "# Training Frequency Per Muscle Group\n## The Case for Multiple Weekly Sessions Per Muscle\nTraining a muscle group more than once per week allows the weekly volume to be distributed across sessions rather than concentrated in one. This matters because there is a practical cap on productive volume per session — roughly 5–10 sets of direct work per muscle before additional sets yield diminishing returns and accumulate excessive fatigue. Spreading volume across 2–3 sessions per week allows more total quality sets without exceeding per-session limits.",
+      "chunk_index": 0,
+      "source_citation": null
+    },
+    {
+      "document_title": "Hypertrophy Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Hypertrophy Training Fundamentals\n## Volume: Sets Per Muscle Per Week\nHypertrophy responds to training volume. NSCA-aligned guidelines suggest a minimum effective volume of roughly 10 working sets per muscle group per week for intermediates, with an upper limit that varies by individual recovery capacity. Most lifters make consistent progress in the range of 10–20 sets per week per muscle. Volume should be ramped over a block and reduced during a deload. Starting a new block at the low end of your effective range and adding sets over 4–6 weeks avoids rapid fatigue accumulation.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Training Frequency Per Muscle Group",
+      "category": "training",
+      "chunk_text": "# Training Frequency Per Muscle Group\n## Evidence-Based Frequency Recommendations\nFor most lifters, 2 sessions per week per muscle group is the minimum effective frequency for hypertrophy and strength, and it outperforms once-weekly training when volume is equated. 3 sessions per week is appropriate for lifters targeting faster development, as it supports higher total weekly volume and more frequent motor pattern practice. Frequencies above 3–4 sessions per week per muscle offer diminishing additional benefit and are mainly used in advanced or sport-specific contexts.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Training Frequency Per Muscle Group",
+      "category": "training",
+      "chunk_text": "# Training Frequency Per Muscle Group\n## Practical Program Structures\nFull-body training 3 days per week naturally provides 3x frequency for every muscle group with manageable per-session volume. Upper/lower splits (4 days per week) provide 2x frequency with higher per-session volume. Push/pull/legs splits can provide 1x or 2x frequency depending on whether they run 3 or 6 days. For most intermediate lifters, 3–4 sessions per week total — structured as full-body or upper/lower — is practical, recoverable, and provides sufficient frequency.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "Training Frequency Per Muscle Group",
+      "category": "training",
+      "chunk_text": "# Training Frequency Per Muscle Group\n## Frequency by Training Goal\n**Strength:** Primary competition lifts (squat, bench, deadlift) benefit from practice frequency of 2–4 sessions per week. The skill component of executing these lifts under load improves with frequent repetition. Lower accessory exercises can run at lower frequency (1–2x per week) because they are not the primary expression of strength being developed.\n\n**Hypertrophy:** 2–3 sessions per week per muscle group, with 48–72 hours between sessions targeting the same muscle, allows recovery while maintaining elevated protein synthesis frequency. Muscles tend to be in an elevated synthetic state for roughly 24–48 hours after training, so waiting 7 days between sessions leaves most of the week in a lower anabolic state.",
+      "chunk_index": 2,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "According to the reference material, most lifters should aim for 10–20 sets per muscle group per week to build muscle, with a minimum of roughly 10 working sets for intermediate lifters. The material recommends training each muscle group 2–3 times per week for hypertrophy, with 48–72 hours between sessions targeting the same muscle to allow recovery while maintaining elevated protein synthesis. Volume should be started at the lower end of this range and gradually increased over 4–6 weeks to avoid rapid fatigue accumulation.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "According to the reference material, most lifters should aim for 10–20 sets per muscle group per week to build muscle, with a minimum of roughly 10 working sets for intermediate lifters. The material recommends training each muscle group 2–3 times per week for hypertrophy, with 48–72 hours between sessions targeting the same muscle to allow recovery while maintaining elevated protein synthesis. Volume should be started at the lower end of this range and gradually increased over 4–6 weeks to avoid rapid fatigue accumulation.",
+    "sources": [
+      {
+        "document_title": "Training Frequency Per Muscle Group",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Hypertrophy Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    2,
+    3,
+    5
+  ],
+  "trap_refused": null
+}

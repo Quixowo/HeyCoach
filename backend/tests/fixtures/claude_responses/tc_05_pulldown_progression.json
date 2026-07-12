@@ -1,0 +1,102 @@
+{
+  "id": "05_pulldown_progression",
+  "user_message": "How is my lat pulldown progressing?",
+  "setup": {
+    "sessions": [
+      {
+        "exercise_name": "Lat Pulldown",
+        "days_ago": 21,
+        "sets": [
+          [
+            120,
+            10,
+            2
+          ],
+          [
+            120,
+            10,
+            2
+          ]
+        ]
+      },
+      {
+        "exercise_name": "Lat Pulldown",
+        "days_ago": 14,
+        "sets": [
+          [
+            130,
+            10,
+            2
+          ],
+          [
+            130,
+            9,
+            1
+          ]
+        ]
+      },
+      {
+        "exercise_name": "Lat Pulldown",
+        "days_ago": 7,
+        "sets": [
+          [
+            140,
+            10,
+            2
+          ],
+          [
+            140,
+            9,
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "must_call": [
+    "search_exercises",
+    "analyze_progression"
+  ],
+  "must_not_call": [],
+  "checks": {},
+  "id_map": {
+    "b747c930-39de-49cd-8920-c02792356caa": "Lat Pulldown"
+  },
+  "stream_iterations": [
+    [
+      {
+        "type": "text",
+        "text": "Let me look that up — I'll search for the exercise and pull your progression data at the same time."
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01HiLZstYF1Ft5pjrG7rN1sj",
+        "name": "search_exercises",
+        "input": {
+          "query": "lat pulldown"
+        }
+      }
+    ],
+    [
+      {
+        "type": "tool_use",
+        "id": "toolu_01YaLAnKbmMYF4sJaiyfcacR",
+        "name": "analyze_progression",
+        "input": {
+          "exercise_id": "b747c930-39de-49cd-8920-c02792356caa"
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "text": "Good news — you're trending in the right direction. Over the last 3 sessions your estimated 1RM has gone from 160 up to about 187, which is a solid jump. No plateau detected either.\n\nThe one caveat is that 3 sessions is a pretty short window, so the trend is encouraging but not yet set in stone. RIR data is also too sparse to read your fatigue pattern, so if you're not already logging how hard your sets feel, it's worth adding — it helps catch when you're grinding too close to failure session after session.\n\nKeep doing what you're doing for now. If the weight or reps stall for two or three sessions in a row, come back and we can look at adjusting the programming."
+      }
+    ]
+  ],
+  "recorded_tools": [
+    "search_exercises",
+    "analyze_progression"
+  ],
+  "matched_intent": true
+}

@@ -1,0 +1,8 @@
+{
+  "id": "rf_11",
+  "message": "Immediate sharp pain in my groin on a wide-stance squat, now I can barely walk.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 531.38
+}

@@ -1,0 +1,8 @@
+{
+  "id": "rf_04",
+  "message": "My elbow gave out mid-rep, it's swelling and I can't straighten it.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 832.51
+}

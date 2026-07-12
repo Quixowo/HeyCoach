@@ -1,0 +1,36 @@
+{
+  "id": "02_glutes_rag",
+  "user_message": "Is squatting good for building glutes?",
+  "setup": {},
+  "must_call": [
+    "search_knowledge_base"
+  ],
+  "must_not_call": [
+    "get_workout_history",
+    "analyze_progression"
+  ],
+  "checks": {},
+  "id_map": {},
+  "stream_iterations": [
+    [
+      {
+        "type": "tool_use",
+        "id": "toolu_01WLfVduPAHz1uhhTeZGnH4R",
+        "name": "search_knowledge_base",
+        "input": {
+          "query": "squats for glute hypertrophy"
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "text": "Yes, squats are solid for glute development, but with a couple of caveats worth knowing.\n\nSquats do hit the glutes, especially in the bottom of the movement where the glutes are stretched and under load — that deep range is where a lot of the growth stimulus comes from. Going to at least parallel, and ideally a bit below, makes a real difference here. High-bar and low-bar back squats both work, though some lifters find a slightly wider stance with toes turned out gives them a better glute feel.\n\nThat said, squats are fundamentally a quad-dominant movement, so if your primary goal is glute hypertrophy, they work best as part of a mix rather than your only tool. Exercises like Romanian deadlifts, hip thrusts, and Bulgarian split squats tend to load the glutes through a longer range of motion and can be more directly targeted. The research generally supports using both compound movements like squats and more glute-specific work together for maximum hypertrophy.\n\nSo short answer: yes, keep squatting, but pair them with some dedicated glute exercises and you'll get a lot more out of your training."
+      }
+    ]
+  ],
+  "recorded_tools": [
+    "search_knowledge_base"
+  ],
+  "matched_intent": true
+}

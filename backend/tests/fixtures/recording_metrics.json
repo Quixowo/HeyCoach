@@ -1,0 +1,537 @@
+{
+  "recorded_at": "2026-07-08T22:33:55",
+  "models": {
+    "sonnet": "claude-sonnet-4-6",
+    "haiku": "claude-haiku-4-5-20251001",
+    "embed": "voyage-4-lite"
+  },
+  "a_groundedness": {
+    "overall": {
+      "passed": 15,
+      "total": 15,
+      "fraction": "15/15"
+    },
+    "by_category": {
+      "injury_prevention": {
+        "passed": 3,
+        "total": 3,
+        "fraction": "3/3"
+      },
+      "training": {
+        "passed": 12,
+        "total": 12,
+        "fraction": "12/12"
+      }
+    },
+    "per_question": [
+      {
+        "id": "grd_01_progressive_overload",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_02_load_increment",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_03_hypertrophy_volume",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_04_hypertrophy_reps",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_05_what_is_rir",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_06_rir_target",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_07_deload",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_08_frequency",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_09_strength_intensity",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_10_warmup",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_11_rest_periods",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_12_squat_kneecave",
+        "category": "training",
+        "passed": true
+      },
+      {
+        "id": "grd_13_acute_vs_chronic",
+        "category": "injury_prevention",
+        "passed": true
+      },
+      {
+        "id": "grd_14_acute_response",
+        "category": "injury_prevention",
+        "passed": true
+      },
+      {
+        "id": "grd_15_recognize_acute",
+        "category": "injury_prevention",
+        "passed": true
+      }
+    ]
+  },
+  "b_traps": {
+    "refused": 4,
+    "total": 4,
+    "fraction": "4/4",
+    "per_trap": [
+      {
+        "id": "grd_16_supplement_brand",
+        "flavor": "nutrition",
+        "groundedness_passed": true,
+        "refused": true,
+        "answer": "The reference material provided does not contain any information about pre-workout supplement brands or recommendations. The material focuses on exercise selection principles, rest periods, training adaptation, and strength training fundamentals, but does not discuss supplements of any kind. I cannot answer this question based on the given reference material."
+      },
+      {
+        "id": "grd_17_running_time",
+        "flavor": null,
+        "groundedness_passed": true,
+        "refused": true,
+        "answer": "The reference material provided does not contain information about improving 5k running time. The material focuses exclusively on strength training topics such as rest periods for weightlifting, autoregulation techniques for heavy lifting, and warm-up protocols before heavy compound exercises. To answer your question about 5k running improvement, I would need reference material that addresses running training methods."
+      },
+      {
+        "id": "grd_18_deadlift_record",
+        "flavor": null,
+        "groundedness_passed": true,
+        "refused": true,
+        "answer": "The reference material provided does not contain information about the current world record for the deadlift. The material focuses exclusively on deadlift form, common technical faults, and cues for proper execution rather than competitive records or achievements."
+      },
+      {
+        "id": "grd_19_barbell_cost",
+        "flavor": null,
+        "groundedness_passed": true,
+        "refused": true,
+        "answer": "The reference material provided does not contain information about the cost of a standard Olympic barbell. The material focuses on strength training principles, exercise form, and programming guidelines, but does not discuss equipment pricing."
+      }
+    ]
+  },
+  "c_citation_density": {
+    "mean_out_of_5": 2.27,
+    "n": 15,
+    "per_question": [
+      {
+        "id": "grd_01_progressive_overload",
+        "attribution": [
+          1,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "grd_02_load_increment",
+        "attribution": [
+          1
+        ]
+      },
+      {
+        "id": "grd_03_hypertrophy_volume",
+        "attribution": [
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "id": "grd_04_hypertrophy_reps",
+        "attribution": [
+          1
+        ]
+      },
+      {
+        "id": "grd_05_what_is_rir",
+        "attribution": [
+          1
+        ]
+      },
+      {
+        "id": "grd_06_rir_target",
+        "attribution": [
+          1
+        ]
+      },
+      {
+        "id": "grd_07_deload",
+        "attribution": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "grd_08_frequency",
+        "attribution": [
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "id": "grd_09_strength_intensity",
+        "attribution": [
+          1
+        ]
+      },
+      {
+        "id": "grd_10_warmup",
+        "attribution": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "grd_11_rest_periods",
+        "attribution": [
+          1
+        ]
+      },
+      {
+        "id": "grd_12_squat_kneecave",
+        "attribution": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "grd_13_acute_vs_chronic",
+        "attribution": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "grd_14_acute_response",
+        "attribution": [
+          1
+        ]
+      },
+      {
+        "id": "grd_15_recognize_acute",
+        "attribution": [
+          1,
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  "d_classifier_latency": {
+    "n": 25,
+    "mean_ms": 807.62,
+    "median_ms": 645.68,
+    "p95_ms": 1380.76,
+    "raw_ms": [
+      1090.58,
+      1453.31,
+      560.25,
+      832.51,
+      783.11,
+      639.55,
+      578.96,
+      645.68,
+      522.48,
+      499.03,
+      531.38,
+      744.29,
+      2721.05,
+      659.65,
+      604.33,
+      610.24,
+      1075.6,
+      850.41,
+      829.94,
+      797.44,
+      623.09,
+      610.39,
+      606.1,
+      725.1,
+      596.01
+    ]
+  },
+  "e_tool_correctness": {
+    "matched": 6,
+    "total": 6,
+    "fraction": "6/6",
+    "load_jump_cap_cases": 1,
+    "cap_cases_detail": [
+      {
+        "id": "03_squat_cap",
+        "update_program_called": true
+      }
+    ],
+    "per_case": [
+      {
+        "id": "01_deadlift_history",
+        "must_call": [
+          "search_exercises",
+          "get_workout_history"
+        ],
+        "recorded_tools": [
+          "search_exercises",
+          "get_workout_history"
+        ],
+        "matched": true
+      },
+      {
+        "id": "02_glutes_rag",
+        "must_call": [
+          "search_knowledge_base"
+        ],
+        "recorded_tools": [
+          "search_knowledge_base"
+        ],
+        "matched": true
+      },
+      {
+        "id": "03_squat_cap",
+        "must_call": [
+          "update_program"
+        ],
+        "recorded_tools": [
+          "search_exercises",
+          "get_program",
+          "update_program"
+        ],
+        "matched": true
+      },
+      {
+        "id": "04_log_ohp",
+        "must_call": [
+          "search_exercises",
+          "log_set"
+        ],
+        "recorded_tools": [
+          "search_exercises",
+          "log_set",
+          "log_set",
+          "log_set"
+        ],
+        "matched": true
+      },
+      {
+        "id": "05_pulldown_progression",
+        "must_call": [
+          "search_exercises",
+          "analyze_progression"
+        ],
+        "recorded_tools": [
+          "search_exercises",
+          "analyze_progression"
+        ],
+        "matched": true
+      },
+      {
+        "id": "06_get_program",
+        "must_call": [
+          "get_program"
+        ],
+        "recorded_tools": [
+          "get_program"
+        ],
+        "matched": true
+      }
+    ]
+  },
+  "f_red_flag": {
+    "recall": {
+      "caught": 12,
+      "total": 12,
+      "fraction": "12/12",
+      "rate": 1.0
+    },
+    "false_positive": {
+      "flagged": 0,
+      "total": 13,
+      "fraction": "0/13",
+      "rate": 0.0
+    },
+    "per_message": [
+      {
+        "id": "rf_01",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_02",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_03",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_04",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_05",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_06",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_07",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_08",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_09",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_10",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_11",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_12",
+        "truth_acute": true,
+        "predicted_acute": true,
+        "verdict": "ACUTE_INJURY"
+      },
+      {
+        "id": "rf_13",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_14",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_15",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_16",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_17",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_18",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_19",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_20",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_21",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_22",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_23",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_24",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      },
+      {
+        "id": "rf_25",
+        "truth_acute": false,
+        "predicted_acute": false,
+        "verdict": "ROUTINE"
+      }
+    ]
+  }
+}

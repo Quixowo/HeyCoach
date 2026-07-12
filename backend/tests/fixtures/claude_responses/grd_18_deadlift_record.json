@@ -1,0 +1,59 @@
+{
+  "id": "grd_18_deadlift_record",
+  "query": "What's the current world record for the deadlift?",
+  "category": "trap",
+  "trap": true,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Deadlift Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Deadlift Form Cues and Common Faults\n## Setup\nStand with feet hip-width apart, bar over mid-foot (roughly 1 inch from shins). Hinge at the hips and push them back until you can grip the bar. Hip position at setup: hips higher than knees, lower than shoulders — not a squat start position. Grip the bar just outside the legs using either double overhand or mixed grip; hook grip is an option for heavier loads. Before initiating the pull, create tension throughout the system: lats tight (\"protect your armpits\"), deep breath, full brace, and set the back (neutral spine with slight extension, not flexion).",
+      "chunk_index": 0,
+      "source_citation": null
+    },
+    {
+      "document_title": "Deadlift Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Deadlift Form Cues and Common Faults\n## Common Faults: Back Position\n**Lower back rounding:** Can be caused by insufficient bracing, insufficient hip mobility, or load beyond capacity. Mild rounding in the thoracic spine is tolerated by experienced lifters; lower lumbar rounding under load is a risk factor for disc injury. Fix: brace harder before lifting, reduce load, add hip mobility work, and practice Romanian deadlifts to reinforce the hinge pattern with a neutral spine.\n\n**Hyperextension at lockout:** Leaning back excessively at the top, which loads the lumbar spine in extension. Fix: cue \"stand tall\" rather than \"lean back,\" focus on glute squeeze and hip drive forward rather than torso lean.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "Deadlift Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Deadlift Form Cues and Common Faults\n## When to Reduce Load\nReduce load when the lower back rounds significantly from the floor (lumbar flexion under load), when the bar drifts away from the body and cannot be corrected through cueing, or when any sharp lower back or hip pain is present. Grip failure before technique failure is common — straps are acceptable for working sets when training grip separately. Persistent lower back pain beyond normal erector soreness after a heavy deadlift session warrants professional evaluation.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "Deadlift Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Deadlift Form Cues and Common Faults\n## Execution Cues\nCue: \"Push the floor away\" — initiates the lift with leg drive rather than a back-dominant pull. Cue: \"Drag the bar up your legs\" — keeps the bar path close to the body, reducing the moment arm on the lumbar spine. Cue: \"Chest tall\" — helps maintain a neutral spine and prevents rounding. Cue: \"Drive hips through\" at lockout — completes hip extension rather than hyperextending the lumbar spine. Do not jerk the bar off the floor; build tension against it (the \"slack\" method) and then initiate the drive.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Deadlift Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Deadlift Form Cues and Common Faults\n## Common Faults: Lower Body and Bar Path\n**Bar drifting away from the body:** Increases torque on the lower back significantly. Fix: \"drag the bar up the shins\" cue, stronger lat engagement at setup (think \"long arms, tight armpits\").\n\n**Hip shooting up (stiff-leg start):** Hips rise faster than the bar at the start, converting the deadlift into a back-dominant good morning. Fix: lower the hips slightly at setup, cue \"push the floor away\" to drive legs first.",
+      "chunk_index": 2,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "The reference material provided does not contain information about the current world record for the deadlift. The material focuses exclusively on deadlift form, common technical faults, and cues for proper execution rather than competitive records or achievements.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "The reference material provided does not contain information about the current world record for the deadlift. The material focuses exclusively on deadlift form, common technical faults, and cues for proper execution rather than competitive records or achievements.",
+    "sources": [
+      {
+        "document_title": "Deadlift Form Cues and Common Faults",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": null,
+  "trap_refused": true
+}

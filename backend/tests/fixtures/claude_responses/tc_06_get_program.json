@@ -1,0 +1,47 @@
+{
+  "id": "06_get_program",
+  "user_message": "What programs do I have saved?",
+  "setup": {
+    "programs": [
+      {
+        "name": "Upper Lower",
+        "exercises": [
+          {
+            "exercise_name": "Overhead Press",
+            "target_sets": 3,
+            "target_reps": 8,
+            "target_weight": 95
+          }
+        ]
+      }
+    ]
+  },
+  "must_call": [
+    "get_program"
+  ],
+  "must_not_call": [
+    "search_knowledge_base"
+  ],
+  "checks": {},
+  "id_map": {},
+  "stream_iterations": [
+    [
+      {
+        "type": "tool_use",
+        "id": "toolu_01HH6rQjrhy1MFjXoGn5Japr",
+        "name": "get_program",
+        "input": {}
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "text": "You've got one program saved called \"Upper Lower.\" Right now it has a single exercise in it: Overhead Press, programmed for 3 sets of 8 at 95 lbs. Want to add more exercises to it or make any changes?"
+      }
+    ]
+  ],
+  "recorded_tools": [
+    "get_program"
+  ],
+  "matched_intent": true
+}

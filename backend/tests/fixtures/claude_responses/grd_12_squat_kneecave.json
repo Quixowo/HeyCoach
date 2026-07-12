@@ -1,0 +1,62 @@
+{
+  "id": "grd_12_squat_kneecave",
+  "query": "Why do my knees cave in when I squat and how do I fix it?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Squat Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Squat Form Cues and Common Faults\n## Common Faults: Lower Body\n**Knee cave (valgus collapse):** Knees track inward, especially at the bottom or on the way up. Cause: weak hip abductors, poor bracing, or stance that is too narrow. Fix: cue \"spread the floor,\" add hip abductor strengthening (banded clamshells, side-lying abduction), and check stance width.\n\n**Butt wink (posterior pelvic tilt at the bottom):** Excessive pelvic tuck at the bottom of the squat. Cause: limited hip or ankle mobility, or descending beyond the range where neutral spine can be maintained. Fix: address ankle dorsiflexion mobility, adjust stance width, and — if wink is significant — reduce depth until mobility improves.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Squat Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Squat Form Cues and Common Faults\n## Common Faults: Upper Body and Depth\n**Good morning squat (excessive forward torso lean):** The hips rise faster than the shoulders from the bottom. Cause: quad weakness relative to posterior chain, or cues not maintained. Fix: pause squats and high-bar squats to reinforce quad engagement and upright posture.\n\n**Shallow depth:** Not reaching parallel. Cause: load too heavy, insufficient mobility, or habit. Fix: reduce load and film from the side to confirm depth. Depth cue: \"sit between your heels\" — encourages downward rather than backward travel.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "Squat Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Squat Form Cues and Common Faults\n## When to Reduce Load\nReduce load when: knees cave despite cueing and cannot be corrected under that weight, lower back rounds significantly at the bottom, you cannot maintain a braced torso through the full rep, or any sharp joint pain (not muscle burn) is present. Pain beyond typical quad and glute fatigue — particularly in the knees, hips, or lower back — warrants professional evaluation before continuing heavy loading.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "Squat Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Squat Form Cues and Common Faults\n## Execution Cues\nCue: \"Spread the floor\" — push your feet apart laterally (without actually moving them) to engage the hip abductors and maintain knee tracking. Cue: \"Chest up, elbows down\" — prevents excessive forward lean and bar rolling. Cue: \"Hip crease below the knee\" — defines depth (hip joint below top of patella is parallel; below is below-parallel). Cue: \"Drive the floor away\" on the ascent rather than \"lift the weight\" — shifts focus to leg drive. Brace is maintained throughout; exhale at the top or after clearing the sticking point.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Squat Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Squat Form Cues and Common Faults\n## Setup and Bar Position\nFor a barbell back squat, position the bar either high bar (resting on the upper trapezius, more upright torso) or low bar (resting across the rear deltoids and spine of scapula, more forward lean). Both are valid; the choice depends on mobility, goals, and preference. Stance width should allow the knees to track over the toes throughout the movement — typically shoulder-width to slightly wider, with toes angled out 20–35 degrees. Grip the bar as narrow as your shoulder mobility allows to create upper-back tightness. Take a deep breath and brace the core before unracking.",
+      "chunk_index": 0,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "According to the reference material, knee cave (valgus collapse) occurs due to weak hip abductors, poor bracing, or a stance that is too narrow. To fix it, you should use the cue \"spread the floor\" to engage your hip abductors and maintain proper knee tracking, add hip abductor strengthening exercises like banded clamshells and side-lying abduction, and check that your stance width is appropriate. If the problem persists despite these corrections, you should reduce the load you're lifting until you can maintain proper form.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "According to the reference material, knee cave (valgus collapse) occurs due to weak hip abductors, poor bracing, or a stance that is too narrow. To fix it, you should use the cue \"spread the floor\" to engage your hip abductors and maintain proper knee tracking, add hip abductor strengthening exercises like banded clamshells and side-lying abduction, and check that your stance width is appropriate. If the problem persists despite these corrections, you should reduce the load you're lifting until you can maintain proper form.",
+    "sources": [
+      {
+        "document_title": "Squat Form Cues and Common Faults",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1,
+    3
+  ],
+  "trap_refused": null
+}

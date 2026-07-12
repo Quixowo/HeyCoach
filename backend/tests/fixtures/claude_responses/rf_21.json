@@ -1,0 +1,8 @@
+{
+  "id": "rf_21",
+  "message": "How sore is too sore to train the same muscle again?",
+  "truth_acute": false,
+  "recorded_verdict": "ROUTINE",
+  "predicted_acute": false,
+  "latency_ms": 623.09
+}

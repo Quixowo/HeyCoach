@@ -1,0 +1,8 @@
+{
+  "id": "rf_08",
+  "message": "Rolled my ankle stepping off the platform, it's swelling fast and I can't put weight on it.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 645.68
+}

@@ -1,0 +1,76 @@
+{
+  "id": "grd_09_strength_intensity",
+  "query": "What intensity and rep range should I use for building maximal strength?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Strength Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Strength Training Fundamentals\n## Intensity and Rep Ranges for Strength\nStrength-specific programming uses heavier loads than hypertrophy work: typically 80–95% of 1RM for primary lifts, corresponding to rep ranges of 1–6. Sets of 3–5 reps at 82–88% 1RM represent a productive working zone for most intermediates — heavy enough to drive neural adaptation without the injury risk of frequent maximal singles. Competition-style peaking uses higher percentages (90%+) for brief periods immediately before a test or meet.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Hypertrophy Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Hypertrophy Training Fundamentals\n## Intensity: Rep Ranges and Load\nHypertrophy occurs across a wide rep range — from roughly 5 to 30 reps per set — provided sets are taken close to failure. Lower rep ranges (5–10) with heavier loads and higher rep ranges (15–30) with lighter loads produce comparable hypertrophy when effort is equated. The practical advantage of moderate rep ranges (8–15) is that they allow sufficient tension without the joint stress of very heavy loads and without the cardiorespiratory demand of very high-rep sets. Use variety across rep ranges within a program; do not confine hypertrophy work to a single range.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Strength-Focused Work: Longer Rests\nFor heavy compound sets at 80%+ 1RM (1–5 rep ranges), rest periods of 3–5 minutes are standard. At these intensities, the nervous system and phosphocreatine system need full recovery to produce maximal force on subsequent sets. Cutting rest to 2 minutes when doing heavy triples or fives will reduce performance on later sets and reduce total quality volume — counterproductive for strength development. Longer rests also reduce injury risk by ensuring each heavy set is performed with full intent and control.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Strength Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Strength Training Fundamentals\n## Periodization for Strength\nLinear periodization (increasing load week-to-week while decreasing reps) is appropriate for novice and early intermediate lifters. Undulating periodization — alternating heavy/moderate/light days within a week — suits intermediates who can no longer recover between weekly linear jumps. Block periodization (accumulation → intensification → peaking → deload) is common for advanced lifters preparing for specific testing dates. The specific model matters less than the presence of planned variation in intensity and volume over time.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## Typical RIR Targets by Training Phase\nHypertrophy-focused work typically runs at RIR 1–3 for most sets, with occasional sets at RIR 0 near the end of a block. Strength-focused work often sits at RIR 2–4 during accumulation phases to preserve technique under near-maximal loads. During a deload or recovery week, RIR targets rise to 4–6 — the goal is practice, not stress. A common error is treating every session as a max-effort test; consistent training at RIR 1–3 over weeks produces more total volume and less injury risk than frequent sets to failure.",
+      "chunk_index": 1,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "For building maximal strength, use an intensity of 80–95% of your 1RM with a rep range of 1–6 reps per set. A particularly productive working zone for most intermediate lifters is sets of 3–5 reps at 82–88% 1RM, which is heavy enough to drive neural adaptation without excessive injury risk. During competition-style peaking, you can use higher intensities (90%+) for brief periods immediately before a test or meet.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "For building maximal strength, use an intensity of 80–95% of your 1RM with a rep range of 1–6 reps per set. A particularly productive working zone for most intermediate lifters is sets of 3–5 reps at 82–88% 1RM, which is heavy enough to drive neural adaptation without excessive injury risk. During competition-style peaking, you can use higher intensities (90%+) for brief periods immediately before a test or meet.",
+    "sources": [
+      {
+        "document_title": "Strength Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Hypertrophy Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Rest Periods and Training Adaptation",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "RIR-Based Autoregulation",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1
+  ],
+  "trap_refused": null
+}

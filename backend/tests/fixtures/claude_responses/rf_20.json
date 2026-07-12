@@ -1,0 +1,8 @@
+{
+  "id": "rf_20",
+  "message": "Feeling a little stiff this morning but nothing out of the ordinary.",
+  "truth_acute": false,
+  "recorded_verdict": "ROUTINE",
+  "predicted_acute": false,
+  "latency_ms": 797.44
+}

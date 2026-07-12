@@ -1,0 +1,87 @@
+{
+  "id": "03_squat_cap",
+  "user_message": "Bump my squat up to 225 pounds in my program.",
+  "setup": {
+    "programs": [
+      {
+        "name": "My Program",
+        "exercises": [
+          {
+            "exercise_name": "Barbell Back Squat",
+            "target_sets": 3,
+            "target_reps": 5,
+            "target_rir": 2,
+            "target_weight": 200
+          }
+        ]
+      }
+    ]
+  },
+  "must_call": [
+    "update_program"
+  ],
+  "must_not_call": [],
+  "checks": {
+    "cap_rejected": true
+  },
+  "id_map": {
+    "178e724a-658e-4b05-8e6b-6e35ef51f40f": "Barbell Back Squat"
+  },
+  "stream_iterations": [
+    [
+      {
+        "type": "text",
+        "text": "Let me look up both the squat exercise and your current program at the same time."
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01DFkkJXgC3L5jwwmj3nNcXC",
+        "name": "search_exercises",
+        "input": {
+          "query": "squat"
+        }
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_019moNnmWkaCXDzg9Vx8dW1B",
+        "name": "get_program",
+        "input": {}
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "text": "A few squat variations came back, but since your program already has the Barbell Back Squat in it, I'll assume that's the one you mean. Updating it from 200 to 225 now."
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01SozD3ephzz3ezDTwHKX5jm",
+        "name": "update_program",
+        "input": {
+          "program_name": "My Program",
+          "exercises": [
+            {
+              "exercise_id": "178e724a-658e-4b05-8e6b-6e35ef51f40f",
+              "target_sets": 3,
+              "target_reps": 5,
+              "target_rir": 2.0,
+              "target_weight": 225
+            }
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "text": "The system blocked that one — a 25-pound jump is a 12.5% increase, which exceeds the built-in 10% safety cap. That cap exists to keep progression reasonable and reduce injury risk.\n\nThe max you can go in one update is 220 pounds (10% over your current 200). You could set it there now, and once you've worked up to it, bump it again. Want me to set it to 220 to get you started?"
+      }
+    ]
+  ],
+  "recorded_tools": [
+    "search_exercises",
+    "get_program",
+    "update_program"
+  ],
+  "matched_intent": true
+}

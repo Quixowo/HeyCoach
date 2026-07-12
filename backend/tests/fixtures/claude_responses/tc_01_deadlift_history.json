@@ -1,0 +1,79 @@
+{
+  "id": "01_deadlift_history",
+  "user_message": "Show me my logged sets for the conventional deadlift.",
+  "setup": {
+    "sessions": [
+      {
+        "exercise_name": "Conventional Deadlift",
+        "days_ago": 7,
+        "sets": [
+          [
+            315,
+            5,
+            2
+          ],
+          [
+            315,
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "exercise_name": "Conventional Deadlift",
+        "days_ago": 2,
+        "sets": [
+          [
+            325,
+            5,
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  "must_call": [
+    "search_exercises",
+    "get_workout_history"
+  ],
+  "must_not_call": [
+    "search_knowledge_base"
+  ],
+  "checks": {},
+  "id_map": {
+    "3317e737-7aef-4019-995f-f6c9789d3ec3": "Conventional Deadlift"
+  },
+  "stream_iterations": [
+    [
+      {
+        "type": "tool_use",
+        "id": "toolu_014EvQT5KRNSKLxkLHjuYYD1",
+        "name": "search_exercises",
+        "input": {
+          "query": "conventional deadlift"
+        }
+      }
+    ],
+    [
+      {
+        "type": "tool_use",
+        "id": "toolu_011xKrY3MREw9Xjhpwt1hn1G",
+        "name": "get_workout_history",
+        "input": {
+          "exercise_id": "3317e737-7aef-4019-995f-f6c9789d3ec3"
+        }
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "text": "Here's what's logged for the Conventional Deadlift:\n\nJuly 9, 2026 session:\n- Set 1: 315 lbs x 5 reps, 2 RIR\n- Set 2: 315 lbs x 5 reps, 1 RIR\n- Set 3: 325 lbs x 5 reps, 2 RIR\n\nThat's 3 sets total on record. Looks like you bumped the weight up by 10 lbs on that last set while keeping reps the same. Want me to run a progression analysis to see how things are trending?"
+      }
+    ]
+  ],
+  "recorded_tools": [
+    "search_exercises",
+    "get_workout_history"
+  ],
+  "matched_intent": true
+}

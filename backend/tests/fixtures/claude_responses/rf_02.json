@@ -1,0 +1,8 @@
+{
+  "id": "rf_02",
+  "message": "Heard a loud snap in my shoulder during bench and now I can't raise my arm.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 1453.31
+}

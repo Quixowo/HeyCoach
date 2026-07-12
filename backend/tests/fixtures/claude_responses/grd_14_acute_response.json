@@ -1,0 +1,71 @@
+{
+  "id": "grd_14_acute_response",
+  "query": "What should I do for a minor acute muscle strain?",
+  "category": "injury_prevention",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Recognizing Acute vs. Chronic Pain",
+      "category": "injury_prevention",
+      "chunk_text": "# Recognizing Acute vs. Chronic Pain\n## Conservative Early Response to Acute Pain\nFor a fresh, minor acute injury such as a mild strain or sprain, first-line management is conservative and centers on protecting the area and letting it settle. The RICE approach, rest, ice, compression, and elevation, is commonly used for these injuries, alongside over-the-counter pain relief where appropriate. This guidance applies to minor cases and is not a substitute for evaluation. Severe pain, an inability to use the limb, deformity, or pain that fails to improve over a reasonable period all point toward professional care. An AI coach should treat conservative rest and de-loading as the default response to new acute pain, never encouraging a lifter to train through it.",
+      "chunk_index": 3,
+      "source_citation": "Acute vs. Chronic Pain: Key Differences, Cleveland Clinic — https://health.clevelandclinic.org/acute-vs-chronic-pain"
+    },
+    {
+      "document_title": "Recognizing Acute vs. Chronic Pain",
+      "category": "injury_prevention",
+      "chunk_text": "# Recognizing Acute vs. Chronic Pain\n## What Acute Pain Is\nAcute pain starts quickly and typically resolves once the underlying issue is treated or has healed. It has a specific, identifiable trigger, such as a broken bone, a burn, surgery, dental work, or a training injury like a muscle strain. In this sense acute pain works as a protective warning signal, comparable to a loud alarm that draws attention to a problem that needs addressing. For a lifter, sharp pain that appears during or immediately after a specific set is usually acute. It signals that something was loaded beyond what the tissue could tolerate, and it warrants stopping the movement rather than pushing through.",
+      "chunk_index": 0,
+      "source_citation": "Acute vs. Chronic Pain: Key Differences, Cleveland Clinic — https://health.clevelandclinic.org/acute-vs-chronic-pain"
+    },
+    {
+      "document_title": "Recognizing Acute vs. Chronic Pain",
+      "category": "injury_prevention",
+      "chunk_text": "# Recognizing Acute vs. Chronic Pain\n## How the Two Differ in Practice\nThe most useful distinctions are timing, trigger, and course. Acute pain comes on suddenly, ties to a specific event, and fades as healing progresses. Chronic pain builds or persists over a much longer window, may lack an obvious cause, and does not reliably improve with time alone. Acute pain that does not resolve as expected can transition into chronic pain, though this is not inevitable. Recognizing which pattern a lifter describes helps determine the response: an acute strain often settles with conservative early care, whereas pain that has outlasted normal healing time signals the need for a clinician's assessment rather than continued self-management.",
+      "chunk_index": 2,
+      "source_citation": "Acute vs. Chronic Pain: Key Differences, Cleveland Clinic — https://health.clevelandclinic.org/acute-vs-chronic-pain"
+    },
+    {
+      "document_title": "Progressive Overload Principles",
+      "category": "training",
+      "chunk_text": "# Progressive Overload Principles\n## When Overload Goes Wrong\nOverload applied too aggressively — large jumps in load or volume without adequate recovery — leads to overreaching or injury rather than adaptation. Warning signs: technique breakdown under loads that were recently manageable, persistent joint discomfort (not muscle soreness), and declining performance across two or more consecutive sessions. When these appear, reduce load or volume rather than pushing through.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "Bench Press Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Bench Press Form Cues and Common Faults\n## When to Reduce Load\nReduce load when shoulder pain (not just pectoral or tricep fatigue) is present during or after the lift, when the bar cannot be controlled on the descent, or when one shoulder is rising off the bench during the press. Any sharp pain in the shoulder, front of the shoulder, or bicep tendon region (upper arm near shoulder) warrants stopping and seeking professional evaluation before resuming loaded pressing.",
+      "chunk_index": 4,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "For a minor acute muscle strain, the first-line approach is conservative management using the RICE method: rest, ice, compression, and elevation. Over-the-counter pain relief can be used alongside this approach. You should protect the area and allow it to settle rather than training through the pain. However, if you experience severe pain, inability to use the limb, deformity, or pain that fails to improve over a reasonable period, you should seek professional care.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "For a minor acute muscle strain, the first-line approach is conservative management using the RICE method: rest, ice, compression, and elevation. Over-the-counter pain relief can be used alongside this approach. You should protect the area and allow it to settle rather than training through the pain. However, if you experience severe pain, inability to use the limb, deformity, or pain that fails to improve over a reasonable period, you should seek professional care.",
+    "sources": [
+      {
+        "document_title": "Recognizing Acute vs. Chronic Pain",
+        "category": "injury_prevention",
+        "source_citation": "Acute vs. Chronic Pain: Key Differences, Cleveland Clinic — https://health.clevelandclinic.org/acute-vs-chronic-pain"
+      },
+      {
+        "document_title": "Progressive Overload Principles",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Bench Press Form Cues and Common Faults",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1
+  ],
+  "trap_refused": null
+}

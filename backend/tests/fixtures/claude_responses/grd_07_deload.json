@@ -1,0 +1,64 @@
+{
+  "id": "grd_07_deload",
+  "query": "When should I take a deload and how do I structure it?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Deload Protocols — When and How",
+      "category": "training",
+      "chunk_text": "# Deload Protocols — When and How\n## When to Deload\nA common heuristic is every 4–8 weeks of hard training, depending on training age, volume, and stress outside the gym. Signs that a deload is overdue: multi-session performance decline despite adequate sleep and nutrition, motivation loss, persistent joint stiffness that was not present at the start of the block, and RIR estimates that consistently feel off (loads feel heavier than they should). For intermediates running block periodization, deloads are typically programmed at the end of each 4- or 6-week accumulation block regardless of subjective feel.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Deload Protocols — When and How",
+      "category": "training",
+      "chunk_text": "# Deload Protocols — When and How\n## Return to Training After a Deload\nThe week following a deload, perceived effort typically drops and motivation rises — a sign the deload worked. Do not interpret this as license to immediately jump to new maximal loads. Return to the planned starting point of the next training block, which is usually 5–10% lower than end-of-block peak weights, then re-accumulate. Skipping this step and jumping straight to pre-deload loads is a common cause of early-block overreaching.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "Deload Protocols — When and How",
+      "category": "training",
+      "chunk_text": "# Deload Protocols — When and How\n## What to Do During a Deload\nMaintain movement patterns — keep the same exercises as the preceding block. This is not the time to learn new lifts, as technique under reduced load can drift. Focus on quality of movement, bracing, and cues. Avoid the temptation to add volume because sessions feel easy; the point is reduced stress, not a training holiday. Conditioning, mobility work, and recovery modalities (sleep, nutrition) can be emphasized during this period without undermining the deload.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "Deload Protocols — When and How",
+      "category": "training",
+      "chunk_text": "# Deload Protocols — When and How\n## Volume Deload vs. Intensity Deload\nTwo main deload approaches. A volume deload keeps load the same but cuts sets by 40–60% (e.g., 3 sets per exercise becomes 1–2). This maintains neural activation and movement practice without accumulating more fatigue. An intensity deload keeps volume similar but reduces load to roughly 60–70% of recent working weights. Either works; volume deloads are more commonly recommended because maintaining load helps preserve the motor pattern and avoids the psychological sense of regression. Some programs use a hybrid: cut both volume and intensity moderately.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Deload Protocols — When and How",
+      "category": "training",
+      "chunk_text": "# Deload Protocols — When and How\n## What a Deload Is\nA deload is a planned period of reduced training stress — typically one week — inserted into a training block to allow accumulated fatigue to dissipate. During a deload, capacity (strength, muscle mass) is maintained while fatigue drops, which often reveals fitness gains that were masked by tiredness. Deloads are not the same as rest weeks; the lifter still trains, but at reduced volume or intensity. They are a scheduled recovery tool, not a response to injury.",
+      "chunk_index": 0,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "You should take a deload every 4–8 weeks of hard training, depending on your training age, volume, and outside stress, or when you notice signs like multi-session performance decline, motivation loss, persistent joint stiffness, or loads feeling heavier than they should. During the deload week, maintain the same exercises but reduce either volume (cutting sets by 40–60%) or intensity (dropping to 60–70% of recent weights)—volume deloads are more commonly recommended because they preserve neural activation and motor patterns. Focus on movement quality rather than adding volume, and you can emphasize conditioning, mobility, and recovery during this period. After the deload, return to the planned starting point of your next training block (usually 5–10% lower than your peak weights) rather than jumping straight back to pre-deload loads.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "You should take a deload every 4–8 weeks of hard training, depending on your training age, volume, and outside stress, or when you notice signs like multi-session performance decline, motivation loss, persistent joint stiffness, or loads feeling heavier than they should. During the deload week, maintain the same exercises but reduce either volume (cutting sets by 40–60%) or intensity (dropping to 60–70% of recent weights)—volume deloads are more commonly recommended because they preserve neural activation and motor patterns. Focus on movement quality rather than adding volume, and you can emphasize conditioning, mobility, and recovery during this period. After the deload, return to the planned starting point of your next training block (usually 5–10% lower than your peak weights) rather than jumping straight back to pre-deload loads.",
+    "sources": [
+      {
+        "document_title": "Deload Protocols — When and How",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "trap_refused": null
+}

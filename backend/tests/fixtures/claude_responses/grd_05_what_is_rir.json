@@ -1,0 +1,61 @@
+{
+  "id": "grd_05_what_is_rir",
+  "query": "What does RIR mean in training?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## What RIR Means\nReps in Reserve (RIR) is an estimate of how many additional reps you could complete before technical failure on a given set. RIR 0 means the next rep would fail; RIR 2 means you could do 2 more reps. RIR is used to regulate effort across a training block so that the intensity of each session is appropriate to its purpose — not every set should go to failure, and not every set should be far from it. Accurate RIR estimation improves with practice; beginners tend to underestimate how many reps they have left.",
+      "chunk_index": 0,
+      "source_citation": null
+    },
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## RIR vs. RPE\nRate of Perceived Exertion (RPE) on a 1–10 scale is often used interchangeably with RIR in strength training contexts, where RPE 10 = RIR 0, RPE 9 = RIR 1, RPE 8 = RIR 2, and so on. Both systems communicate the same information; use whichever you find more intuitive. RIR language is more directly actionable (\"I had 2 left\") whereas RPE is slightly more abstract. Either works when tracked consistently.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## Typical RIR Targets by Training Phase\nHypertrophy-focused work typically runs at RIR 1–3 for most sets, with occasional sets at RIR 0 near the end of a block. Strength-focused work often sits at RIR 2–4 during accumulation phases to preserve technique under near-maximal loads. During a deload or recovery week, RIR targets rise to 4–6 — the goal is practice, not stress. A common error is treating every session as a max-effort test; consistent training at RIR 1–3 over weeks produces more total volume and less injury risk than frequent sets to failure.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## Common Calibration Errors\nThe most common error is stopping too far from failure (claiming RIR 3 when actual RIR is 6+), which means the set is not providing sufficient stimulus for adaptation. Periodically testing to technical failure in a controlled setting — ideally on a secondary exercise rather than a primary compound lift — calibrates your RIR estimates and prevents chronic under-training. The second common error is the reverse: underestimating RIR and routinely training to failure when the program calls for RIR 2, which accumulates more fatigue than intended.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## Using RIR to Adjust Load Day-to-Day\nAutoregulation means adjusting planned load based on actual readiness that day. If the prescribed load feels like RIR 0 when it should feel like RIR 2, reduce load 5–10% and note it. If the prescribed load feels like RIR 5 when it should be RIR 2, add a small increment and recheck. This accounts for day-to-day variation in sleep, stress, nutrition, and cumulative fatigue — factors that affect performance but are invisible to a fixed percentage-based prescription.",
+      "chunk_index": 2,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "RIR means Reps in Reserve, which is an estimate of how many additional repetitions you could complete before reaching technical failure on a given set. For example, RIR 0 means the next rep would fail, while RIR 2 means you could do 2 more reps. RIR is used in training to regulate effort and ensure that the intensity of each session is appropriate to its purpose, since not every set should go to failure and not every set should be far from it.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "RIR means Reps in Reserve, which is an estimate of how many additional repetitions you could complete before reaching technical failure on a given set. For example, RIR 0 means the next rep would fail, while RIR 2 means you could do 2 more reps. RIR is used in training to regulate effort and ensure that the intensity of each session is appropriate to its purpose, since not every set should go to failure and not every set should be far from it.",
+    "sources": [
+      {
+        "document_title": "RIR-Based Autoregulation",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1
+  ],
+  "trap_refused": null
+}

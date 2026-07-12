@@ -1,0 +1,8 @@
+{
+  "id": "rf_12",
+  "message": "Something sharp went off in my neck and now I can't turn my head.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 744.29
+}

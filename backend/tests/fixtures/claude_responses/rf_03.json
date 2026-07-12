@@ -1,0 +1,8 @@
+{
+  "id": "rf_03",
+  "message": "Sudden stabbing pain in my lower back on a deadlift, couldn't stand up straight after.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 560.25
+}

@@ -1,0 +1,74 @@
+{
+  "id": "grd_19_barbell_cost",
+  "query": "How much does a standard Olympic barbell cost?",
+  "category": "trap",
+  "trap": true,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Progressive Overload Principles",
+      "category": "training",
+      "chunk_text": "# Progressive Overload Principles\n## Load-Based Progression\nThe most direct form of overload is adding weight to the bar. Standard increments are 5 lbs for upper-body lifts and 10 lbs for lower-body lifts per session when a lifter is in a linear progression phase (typically novice to early intermediate). When linear jumps stall, micro-loading with 2.5 lb plates or fractional plates is appropriate. A practical rule: add weight only when you can complete all prescribed reps with at least 1 rep in reserve (RIR ≥ 1) across all sets.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Strength Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Strength Training Fundamentals\n## Intensity and Rep Ranges for Strength\nStrength-specific programming uses heavier loads than hypertrophy work: typically 80–95% of 1RM for primary lifts, corresponding to rep ranges of 1–6. Sets of 3–5 reps at 82–88% 1RM represent a productive working zone for most intermediates — heavy enough to drive neural adaptation without the injury risk of frequent maximal singles. Competition-style peaking uses higher percentages (90%+) for brief periods immediately before a test or meet.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Squat Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Squat Form Cues and Common Faults\n## Setup and Bar Position\nFor a barbell back squat, position the bar either high bar (resting on the upper trapezius, more upright torso) or low bar (resting across the rear deltoids and spine of scapula, more forward lean). Both are valid; the choice depends on mobility, goals, and preference. Stance width should allow the knees to track over the toes throughout the movement — typically shoulder-width to slightly wider, with toes angled out 20–35 degrees. Grip the bar as narrow as your shoulder mobility allows to create upper-back tightness. Take a deep breath and brace the core before unracking.",
+      "chunk_index": 0,
+      "source_citation": null
+    },
+    {
+      "document_title": "Strength Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Strength Training Fundamentals\n## When to Test a True Max\nTesting a 1RM carries injury risk and high CNS fatigue cost, so it should be purposeful, not routine. A true 1RM test is appropriate after a peaking block when the lifter is well-rested and technically confident. Estimated 1RM (from submaximal sets using standard formulas) is sufficient for programming purposes in most training contexts. Testing too frequently — more than once every 8–12 weeks for most lifters — disrupts training continuity without meaningful benefit.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "Bench Press Form Cues and Common Faults",
+      "category": "training",
+      "chunk_text": "# Bench Press Form Cues and Common Faults\n## Setup\nLie on the bench with eyes under the bar. Grip width: typically 1–2 inches outside shoulder-width for standard bench press, wider grip reduces range of motion, narrower grip (close-grip) increases tricep demand. Feet flat on the floor (or on plates if the bench is too high for your height). Create a slight arch in the thoracic spine by squeezing the shoulder blades together and down — this is a stable, structurally sound position, not a power-lifting extreme arch. The goal is to retract and depress the scapulae, not to eliminate the arch. Brace the core and engage the legs against the floor before unracking.",
+      "chunk_index": 0,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "The reference material provided does not contain information about the cost of a standard Olympic barbell. The material focuses on strength training principles, exercise form, and programming guidelines, but does not discuss equipment pricing.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "The reference material provided does not contain information about the cost of a standard Olympic barbell. The material focuses on strength training principles, exercise form, and programming guidelines, but does not discuss equipment pricing.",
+    "sources": [
+      {
+        "document_title": "Progressive Overload Principles",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Strength Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Squat Form Cues and Common Faults",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Bench Press Form Cues and Common Faults",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": null,
+  "trap_refused": true
+}

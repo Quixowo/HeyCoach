@@ -1,0 +1,8 @@
+{
+  "id": "rf_06",
+  "message": "I think I tore my hamstring, it was a sudden sharp pain and there's a bruise forming.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 639.55
+}

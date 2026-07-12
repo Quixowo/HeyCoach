@@ -1,0 +1,8 @@
+{
+  "id": "rf_01",
+  "message": "I felt a sharp pop in my knee mid-squat and now it won't bend.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 1090.58
+}

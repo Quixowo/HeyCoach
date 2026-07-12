@@ -1,0 +1,69 @@
+{
+  "id": "grd_17_running_time",
+  "query": "How do I improve my 5k running time?",
+  "category": "trap",
+  "trap": true,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Fatigue Management Within a Session\nRest period length can be adjusted reactively based on perceived readiness. If a set felt significantly harder than expected, adding 60 seconds before the next set is appropriate. If a set felt unusually easy, proceeding at the standard interval is fine. Tracking how rest periods affect subsequent set performance over time gives useful data on individual recovery rates and helps calibrate programming. Persistent inability to maintain performance even with adequate rest is a signal that cumulative fatigue has built up and a deload may be needed.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## Using RIR to Adjust Load Day-to-Day\nAutoregulation means adjusting planned load based on actual readiness that day. If the prescribed load feels like RIR 0 when it should feel like RIR 2, reduce load 5–10% and note it. If the prescribed load feels like RIR 5 when it should be RIR 2, add a small increment and recheck. This accounts for day-to-day variation in sleep, stress, nutrition, and cumulative fatigue — factors that affect performance but are invisible to a fixed percentage-based prescription.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Warm-Up Protocols Before Heavy Lifting",
+      "category": "training",
+      "chunk_text": "# Warm-Up Protocols Before Heavy Lifting\n## General Warm-Up (Pre-Session)\n5 minutes of light cardiovascular activity (bike, row, brisk walk) raises body temperature and increases blood flow. This is particularly useful in cold environments or early-morning sessions. Follow with 3–5 minutes of dynamic movement: leg swings, hip circles, shoulder circles, thoracic rotations, and bodyweight squats are appropriate. Static stretching before heavy lifting is not recommended as a primary warm-up strategy — it transiently reduces force output. Save extended static stretching for post-session.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Strength-Focused Work: Longer Rests\nFor heavy compound sets at 80%+ 1RM (1–5 rep ranges), rest periods of 3–5 minutes are standard. At these intensities, the nervous system and phosphocreatine system need full recovery to produce maximal force on subsequent sets. Cutting rest to 2 minutes when doing heavy triples or fives will reduce performance on later sets and reduce total quality volume — counterproductive for strength development. Longer rests also reduce injury risk by ensuring each heavy set is performed with full intent and control.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## Common Calibration Errors\nThe most common error is stopping too far from failure (claiming RIR 3 when actual RIR is 6+), which means the set is not providing sufficient stimulus for adaptation. Periodically testing to technical failure in a controlled setting — ideally on a secondary exercise rather than a primary compound lift — calibrates your RIR estimates and prevents chronic under-training. The second common error is the reverse: underestimating RIR and routinely training to failure when the program calls for RIR 2, which accumulates more fatigue than intended.",
+      "chunk_index": 4,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "The reference material provided does not contain information about improving 5k running time. The material focuses exclusively on strength training topics such as rest periods for weightlifting, autoregulation techniques for heavy lifting, and warm-up protocols before heavy compound exercises. To answer your question about 5k running improvement, I would need reference material that addresses running training methods.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "The reference material provided does not contain information about improving 5k running time. The material focuses exclusively on strength training topics such as rest periods for weightlifting, autoregulation techniques for heavy lifting, and warm-up protocols before heavy compound exercises. To answer your question about 5k running improvement, I would need reference material that addresses running training methods.",
+    "sources": [
+      {
+        "document_title": "Rest Periods and Training Adaptation",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "RIR-Based Autoregulation",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Warm-Up Protocols Before Heavy Lifting",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": null,
+  "trap_refused": true
+}

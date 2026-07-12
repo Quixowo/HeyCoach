@@ -1,0 +1,8 @@
+{
+  "id": "rf_10",
+  "message": "My shoulder popped out of place and I had to push it back in.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 499.03
+}

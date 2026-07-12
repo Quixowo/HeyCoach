@@ -1,0 +1,66 @@
+{
+  "id": "grd_11_rest_periods",
+  "query": "How long should I rest between sets for heavy strength work?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Strength-Focused Work: Longer Rests\nFor heavy compound sets at 80%+ 1RM (1–5 rep ranges), rest periods of 3–5 minutes are standard. At these intensities, the nervous system and phosphocreatine system need full recovery to produce maximal force on subsequent sets. Cutting rest to 2 minutes when doing heavy triples or fives will reduce performance on later sets and reduce total quality volume — counterproductive for strength development. Longer rests also reduce injury risk by ensuring each heavy set is performed with full intent and control.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Hypertrophy Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Hypertrophy Training Fundamentals\n## Rest Periods\nRest periods of 2–3 minutes between sets are appropriate for hypertrophy training on compound exercises. For isolation exercises, 60–90 seconds is often sufficient. Short rests (under 60 seconds) reduce the load that can be used on subsequent sets, which may reduce total tension stimulus. Longer rests (3–5 minutes) are not harmful but extend session duration unnecessarily for hypertrophy goals. The 2–3 minute range balances recovery of contractile capacity with practical session length.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Hypertrophy-Focused Work: Moderate Rests\nFor sets in the 6–15 rep range targeting hypertrophy, 2–3 minutes between compound sets is appropriate. Research comparing 1-minute to 3-minute rests for hypertrophy consistently favors longer rest periods because they allow higher loads and more total reps across sets, increasing the total mechanical tension stimulus. For isolation exercises (curls, lateral raises, leg curls), 60–90 seconds is sufficient due to the lower systemic demand of single-joint movements.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Why Rest Period Length Matters\nRest period duration directly affects the quality of subsequent sets. Insufficient rest means incomplete phosphocreatine resynthesis and clearance of metabolic byproducts, which reduces force output on the next set. Too much rest extends session length and may slightly reduce the metabolic stimulus relevant to hypertrophy. Rest period prescriptions are therefore a deliberate variable in program design — not something to minimize reflexively or ignore.",
+      "chunk_index": 0,
+      "source_citation": null
+    },
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Supersets and Circuit Training\nPairing non-competing muscle groups (e.g., bench press and pull-up, or quad exercise and hamstring exercise) allows one muscle to rest while the other works. This maintains training quality per exercise while increasing session density and reducing total time. Competing muscle groups should not be superseted for primary strength work — combining squat with leg press, for example, will reduce performance on both. Circuit training with short rests may be appropriate for conditioning goals but is suboptimal for either hypertrophy or maximal strength.",
+      "chunk_index": 3,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "For heavy strength work, you should rest 3–5 minutes between sets. This longer rest period is necessary at intensities of 80% or above of your 1-rep max because your nervous system and phosphocreatine system need full recovery to produce maximal force on subsequent sets. Cutting rest to just 2 minutes during heavy triples or fives will reduce your performance on later sets and compromise the quality of your training, which is counterproductive for strength development. Adequate rest also reduces injury risk by ensuring each heavy set is performed with full intent and control.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "For heavy strength work, you should rest 3–5 minutes between sets. This longer rest period is necessary at intensities of 80% or above of your 1-rep max because your nervous system and phosphocreatine system need full recovery to produce maximal force on subsequent sets. Cutting rest to just 2 minutes during heavy triples or fives will reduce your performance on later sets and compromise the quality of your training, which is counterproductive for strength development. Adequate rest also reduces injury risk by ensuring each heavy set is performed with full intent and control.",
+    "sources": [
+      {
+        "document_title": "Rest Periods and Training Adaptation",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Hypertrophy Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1
+  ],
+  "trap_refused": null
+}

@@ -1,5 +1,18 @@
 """Shared pytest fixtures.
 
+What the eval suites do and do NOT verify (BUILD_SPEC §14.5, CLAUDE.md rule 10):
+the model-behavior suites — ``test_tool_correctness``, ``test_groundedness``,
+``test_red_flag_recall`` — replay Claude/Voyage responses recorded once and committed
+under ``tests/fixtures/claude_responses/``. They verify that the *code* handles a
+given model response correctly (the orchestrator calls the right tool with the right
+args, the RAG pipeline stays grounded / refuses traps, the classifier parses verdicts
+and hits its recall/false-positive targets). They do NOT re-verify that a live model
+still makes the same decisions today — CI never calls a live API and needs no API
+keys. Re-checking live behavior is a manual, periodic activity: if a Claude model
+version changes materially, re-run ``python -m tests.fixtures.record_fixtures`` and
+re-review the fixtures. The pure-code suites (progression math, fuzzy search) need no
+fixtures and test real behavior every run.
+
 Two things are set up here for the whole session:
 
 1. **Schema is migrated once** — a session-scoped autouse fixture runs

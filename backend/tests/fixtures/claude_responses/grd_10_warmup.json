@@ -1,0 +1,64 @@
+{
+  "id": "grd_10_warmup",
+  "query": "How should I warm up before heavy squats?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Warm-Up Protocols Before Heavy Lifting",
+      "category": "training",
+      "chunk_text": "# Warm-Up Protocols Before Heavy Lifting\n## Specific Warm-Up (Ramp to Working Sets)\nFor each primary lift, ramp up through progressively heavier sets before reaching working weight. A typical ramp for a lifter whose working set is 225 lbs on squat: bar x 10, 95 lbs x 5, 135 lbs x 3, 165 lbs x 2, 185 lbs x 1, then working sets at 225 lbs. The number of ramp sets scales with the working weight — heavier working weights require more ramp sets to arrive at the target without accumulated fatigue. Each ramp set should feel faster and more controlled than the one before.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Warm-Up Protocols Before Heavy Lifting",
+      "category": "training",
+      "chunk_text": "# Warm-Up Protocols Before Heavy Lifting\n## General Warm-Up (Pre-Session)\n5 minutes of light cardiovascular activity (bike, row, brisk walk) raises body temperature and increases blood flow. This is particularly useful in cold environments or early-morning sessions. Follow with 3–5 minutes of dynamic movement: leg swings, hip circles, shoulder circles, thoracic rotations, and bodyweight squats are appropriate. Static stretching before heavy lifting is not recommended as a primary warm-up strategy — it transiently reduces force output. Save extended static stretching for post-session.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Warm-Up Protocols Before Heavy Lifting",
+      "category": "training",
+      "chunk_text": "# Warm-Up Protocols Before Heavy Lifting\n## When More Warm-Up Is Needed\nCold environments, morning sessions, prior to maximum effort attempts, and older lifters all call for longer or more thorough warm-up protocols. If the first working set consistently feels worse than the second, the warm-up is insufficient — add one more ramp set. Persistent stiffness or discomfort that does not resolve after a full warm-up — particularly in joints rather than muscles — warrants evaluation rather than pushing through.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "Warm-Up Protocols Before Heavy Lifting",
+      "category": "training",
+      "chunk_text": "# Warm-Up Protocols Before Heavy Lifting\n## Minimizing Fatigue in the Warm-Up\nWarm-up sets should not be taken to failure or near failure. Keep reps low (1–5) as weight increases. The bar and early light sets are higher-rep (5–10) for movement practice; as load approaches working weight, reduce reps to avoid fatiguing the muscles before the working sets. Total warm-up volume should be well below total working-set volume. For secondary or accessory exercises later in the session, a shorter specific warm-up (1–2 ramp sets) is sufficient because the body is already warm.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "Warm-Up Protocols Before Heavy Lifting",
+      "category": "training",
+      "chunk_text": "# Warm-Up Protocols Before Heavy Lifting\n## The Purpose of a Warm-Up\nA warm-up serves three functions: raising core and muscle temperature (which increases contractile efficiency and reduces injury risk), rehearsing the movement pattern at submax load (motor preparation), and psychologically preparing for high-effort work. A well-executed warm-up improves performance on working sets relative to going in cold. It does not need to be long — 10–15 minutes total is typical. Avoid excessive fatigue during warm-up; the goal is readiness, not a workout in itself.",
+      "chunk_index": 0,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "Before heavy squats, begin with 5 minutes of light cardiovascular activity like biking or rowing, followed by 3–5 minutes of dynamic movements such as leg swings, hip circles, and bodyweight squats. Then perform a specific warm-up by ramping through progressively heavier sets with low reps (starting with the bar for 10 reps, then increasing weight while decreasing reps to 1–5) until you reach your working weight, ensuring each set feels faster and more controlled than the previous one. Avoid static stretching before the lift, as it temporarily reduces force output. The entire warm-up should take about 10–15 minutes and leave you ready without accumulated fatigue.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "Before heavy squats, begin with 5 minutes of light cardiovascular activity like biking or rowing, followed by 3–5 minutes of dynamic movements such as leg swings, hip circles, and bodyweight squats. Then perform a specific warm-up by ramping through progressively heavier sets with low reps (starting with the bar for 10 reps, then increasing weight while decreasing reps to 1–5) until you reach your working weight, ensuring each set feels faster and more controlled than the previous one. Avoid static stretching before the lift, as it temporarily reduces force output. The entire warm-up should take about 10–15 minutes and leave you ready without accumulated fatigue.",
+    "sources": [
+      {
+        "document_title": "Warm-Up Protocols Before Heavy Lifting",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "trap_refused": null
+}

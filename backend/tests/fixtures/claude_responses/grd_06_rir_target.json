@@ -1,0 +1,76 @@
+{
+  "id": "grd_06_rir_target",
+  "query": "What RIR should most of my hypertrophy sets be at?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "RIR-Based Autoregulation",
+      "category": "training",
+      "chunk_text": "# RIR-Based Autoregulation\n## Typical RIR Targets by Training Phase\nHypertrophy-focused work typically runs at RIR 1–3 for most sets, with occasional sets at RIR 0 near the end of a block. Strength-focused work often sits at RIR 2–4 during accumulation phases to preserve technique under near-maximal loads. During a deload or recovery week, RIR targets rise to 4–6 — the goal is practice, not stress. A common error is treating every session as a max-effort test; consistent training at RIR 1–3 over weeks produces more total volume and less injury risk than frequent sets to failure.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Hypertrophy Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Hypertrophy Training Fundamentals\n## Intensity: Rep Ranges and Load\nHypertrophy occurs across a wide rep range — from roughly 5 to 30 reps per set — provided sets are taken close to failure. Lower rep ranges (5–10) with heavier loads and higher rep ranges (15–30) with lighter loads produce comparable hypertrophy when effort is equated. The practical advantage of moderate rep ranges (8–15) is that they allow sufficient tension without the joint stress of very heavy loads and without the cardiorespiratory demand of very high-rep sets. Use variety across rep ranges within a program; do not confine hypertrophy work to a single range.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Strength Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Strength Training Fundamentals\n## Intensity and Rep Ranges for Strength\nStrength-specific programming uses heavier loads than hypertrophy work: typically 80–95% of 1RM for primary lifts, corresponding to rep ranges of 1–6. Sets of 3–5 reps at 82–88% 1RM represent a productive working zone for most intermediates — heavy enough to drive neural adaptation without the injury risk of frequent maximal singles. Competition-style peaking uses higher percentages (90%+) for brief periods immediately before a test or meet.",
+      "chunk_index": 1,
+      "source_citation": null
+    },
+    {
+      "document_title": "Rest Periods and Training Adaptation",
+      "category": "training",
+      "chunk_text": "# Rest Periods and Training Adaptation\n## Hypertrophy-Focused Work: Moderate Rests\nFor sets in the 6–15 rep range targeting hypertrophy, 2–3 minutes between compound sets is appropriate. Research comparing 1-minute to 3-minute rests for hypertrophy consistently favors longer rest periods because they allow higher loads and more total reps across sets, increasing the total mechanical tension stimulus. For isolation exercises (curls, lateral raises, leg curls), 60–90 seconds is sufficient due to the lower systemic demand of single-joint movements.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Hypertrophy Training Fundamentals",
+      "category": "training",
+      "chunk_text": "# Hypertrophy Training Fundamentals\n## Volume: Sets Per Muscle Per Week\nHypertrophy responds to training volume. NSCA-aligned guidelines suggest a minimum effective volume of roughly 10 working sets per muscle group per week for intermediates, with an upper limit that varies by individual recovery capacity. Most lifters make consistent progress in the range of 10–20 sets per week per muscle. Volume should be ramped over a block and reduced during a deload. Starting a new block at the low end of your effective range and adding sets over 4–6 weeks avoids rapid fatigue accumulation.",
+      "chunk_index": 1,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "According to the reference material, most of your hypertrophy sets should be at RIR 1–3, with occasional sets at RIR 0 near the end of a training block. The material emphasizes that consistent training at RIR 1–3 over weeks produces more total volume and less injury risk than frequent sets to failure.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "According to the reference material, most of your hypertrophy sets should be at RIR 1–3, with occasional sets at RIR 0 near the end of a training block. The material emphasizes that consistent training at RIR 1–3 over weeks produces more total volume and less injury risk than frequent sets to failure.",
+    "sources": [
+      {
+        "document_title": "RIR-Based Autoregulation",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Hypertrophy Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Strength Training Fundamentals",
+        "category": "training",
+        "source_citation": null
+      },
+      {
+        "document_title": "Rest Periods and Training Adaptation",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1
+  ],
+  "trap_refused": null
+}

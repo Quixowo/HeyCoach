@@ -1,0 +1,8 @@
+{
+  "id": "rf_09",
+  "message": "Felt a tearing sensation in my chest during a heavy press and it hurts to breathe.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 522.48
+}

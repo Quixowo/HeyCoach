@@ -1,0 +1,8 @@
+{
+  "id": "rf_07",
+  "message": "My wrist bent back awkwardly under the bar and it's swollen and painful to move.",
+  "truth_acute": true,
+  "recorded_verdict": "ACUTE_INJURY",
+  "predicted_acute": true,
+  "latency_ms": 578.96
+}

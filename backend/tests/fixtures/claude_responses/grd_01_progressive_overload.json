@@ -1,0 +1,64 @@
+{
+  "id": "grd_01_progressive_overload",
+  "query": "What is progressive overload and how do I apply it?",
+  "category": "training",
+  "trap": false,
+  "trap_flavor": null,
+  "chunks": [
+    {
+      "document_title": "Progressive Overload Principles",
+      "category": "training",
+      "chunk_text": "# Progressive Overload Principles\n## What Progressive Overload Is\nProgressive overload is the systematic increase of training stimulus over time to continue driving adaptation. When a training load becomes familiar, the body stops adapting — you must give it a new reason to change. Overload can be applied by increasing load (weight on the bar), increasing reps or sets, reducing rest periods, increasing range of motion, or improving technique under the same load. All of these count as overload. The key constraint is that the increase must be manageable enough that technique and recovery are not compromised.",
+      "chunk_index": 0,
+      "source_citation": null
+    },
+    {
+      "document_title": "Progressive Overload Principles",
+      "category": "training",
+      "chunk_text": "# Progressive Overload Principles\n## When Overload Goes Wrong\nOverload applied too aggressively — large jumps in load or volume without adequate recovery — leads to overreaching or injury rather than adaptation. Warning signs: technique breakdown under loads that were recently manageable, persistent joint discomfort (not muscle soreness), and declining performance across two or more consecutive sessions. When these appear, reduce load or volume rather than pushing through.",
+      "chunk_index": 4,
+      "source_citation": null
+    },
+    {
+      "document_title": "Progressive Overload Principles",
+      "category": "training",
+      "chunk_text": "# Progressive Overload Principles\n## Rate of Progression by Training Age\nNovices can progress session-to-session (every workout). Intermediates progress week-to-week. Advanced lifters may need a month or longer between meaningful PR attempts. Chasing a novice rate of progression as an intermediate is a common source of overreaching and stalled progress. Recognizing your training age and matching progression rate to it is as important as the overload mechanism itself.",
+      "chunk_index": 3,
+      "source_citation": null
+    },
+    {
+      "document_title": "Progressive Overload Principles",
+      "category": "training",
+      "chunk_text": "# Progressive Overload Principles\n## Rep and Set Progression\nWhen load increments are not practical or appropriate, adding reps or sets is a valid overload mechanism. A common approach is the \"double progression\" model: set a rep range (e.g., 3 sets of 8–12). Once all sets are completed at the top of the range with good form, increase load and reset reps to the bottom of the range. Adding a fourth set to a three-set protocol also constitutes meaningful overload, especially for hypertrophy-focused training where volume drives adaptation.",
+      "chunk_index": 2,
+      "source_citation": null
+    },
+    {
+      "document_title": "Progressive Overload Principles",
+      "category": "training",
+      "chunk_text": "# Progressive Overload Principles\n## Load-Based Progression\nThe most direct form of overload is adding weight to the bar. Standard increments are 5 lbs for upper-body lifts and 10 lbs for lower-body lifts per session when a lifter is in a linear progression phase (typically novice to early intermediate). When linear jumps stall, micro-loading with 2.5 lb plates or fractional plates is appropriate. A practical rule: add weight only when you can complete all prescribed reps with at least 1 rep in reserve (RIR ≥ 1) across all sets.",
+      "chunk_index": 1,
+      "source_citation": null
+    }
+  ],
+  "synthesis_text": "Progressive overload is the systematic increase of training stimulus over time to continue driving adaptation when your body stops responding to your current training. You can apply it by increasing the weight on the bar, adding more reps or sets, reducing rest periods, increasing range of motion, or improving your technique—as long as the increase is manageable enough that technique and recovery aren't compromised. The rate at which you progress should match your training experience: novices can progress session-to-session, intermediates week-to-week, and advanced lifters may need a month or longer between increases. A practical approach is the \"double progression\" model, where you work within a rep range and increase weight only once you've completed all sets with good form at the top of that range.",
+  "groundedness_verdict": "GROUNDED",
+  "expected": {
+    "groundedness_passed": true,
+    "answer": "Progressive overload is the systematic increase of training stimulus over time to continue driving adaptation when your body stops responding to your current training. You can apply it by increasing the weight on the bar, adding more reps or sets, reducing rest periods, increasing range of motion, or improving your technique—as long as the increase is manageable enough that technique and recovery aren't compromised. The rate at which you progress should match your training experience: novices can progress session-to-session, intermediates week-to-week, and advanced lifters may need a month or longer between increases. A practical approach is the \"double progression\" model, where you work within a rep range and increase weight only once you've completed all sets with good form at the top of that range.",
+    "sources": [
+      {
+        "document_title": "Progressive Overload Principles",
+        "category": "training",
+        "source_citation": null
+      }
+    ]
+  },
+  "attribution": [
+    1,
+    3,
+    4,
+    5
+  ],
+  "trap_refused": null
+}
